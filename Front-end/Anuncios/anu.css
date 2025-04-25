@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #8b4828;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  color: white;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 16px;
+  border: 2px solid white;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  background-color: white;
+  color: #8b4828;
+}
+
+main {
+  padding: 40px;
+  background-color: #f7f2ec;
+}
+
+.titulo {
+  color: #8b4828;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.anuncios-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.anuncio-card {
+  display: flex;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.anuncio-imagem {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+}
+
+.anuncio-info {
+  padding: 20px;
+  flex: 1;
+}
+
+.anuncio-info h2 {
+  margin: 0 0 10px 0;
+  color: #8b4828;
+}
+
+.botoes-anuncio {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.editar,
+.deletar {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.editar {
+  background-color: #f7c04a;
+  color: #000;
+}
+
+.deletar {
+  background-color: #d9534f;
+  color: white;
+}
+
+footer {
+  background-color: #8b4828;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  margin-top: 60px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Cavalo - Sela Dourada</title>
+  <link rel="stylesheet" href="cad.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastro de Cavalo à Venda</h1>
+    <form class="formulario">
+      
+      <label for="valor">Valor (R$):</label>
+      <input type="number" id="valor" name="valor" required>
+
+      <label for="raca">Raça:</label>
+      <select id="sexo" name="sexo" required>
+        <option value="">Selecione</option>
+        <option value="Cavalo Crioulo">Cavalo Crioulo</option>
+        <option value="Mangalarga Marchador">Mangalarga Marchador</option>
+        <option value="Mangalarga Paulista">Mangalarga Paulista</option>
+        <option value="Campolina">Campolina</option>
+        <option value="Piquira">Piquira</option>
+        <option value="Quarto de Milha">Quarto de Milha</option>
+        <option value="Puro Sangue Inglês">Puro Sangue Inglês</option>
+        <option value="Appaloosa ">Appalosa</option>
+        <option value="Árabe">Árabe</option>
+        <option value="Frísio ">Frísio </option>
+      </select>
+
+      <label for="idade">Data de Nascimento / Ano:</label>
+      <input type="text" id="idade" name="idade" placeholder="Ex: 15/08/2020 ou 2020" required>
+
+      <label for="tamanho">Tamanho (em metros):</label>
+      <input type="number" step="0.01" id="tamanho" name="tamanho" required>
+
+      <label for="peso">Peso (kg):</label>
+      <input type="number" id="peso" name="peso" required>
+
+      <label for="pelagem">Pelagem (cor):</label>
+      <input type="text" id="pelagem" name="pelagem" required>
+
+      <label for="sexo">Sexo:</label>
+      <select id="sexo" name="sexo" required>
+        <option value="">Selecione</option>
+        <option value="Macho">Macho</option>
+        <option value="Fêmea">Fêmea</option>
+      </select>
+
+      <label for="registro">N de Registro</label>
+      <input type="number" name="cavregis" id="cavregis">
+
+      <label for="localizacao">Localização:</label>
+      <input type="text" id="localizacao" name="localizacao" required>
+
+      <label for="fotos">Galeria de Fotos:</label>
+      <input type="file" id="fotos" name="fotos[]" multiple accept="image/*">
+
+      <button type="submit">Cadastrar Cavalo</button>
+    </form>
+  </div>
+</body>
+</html>

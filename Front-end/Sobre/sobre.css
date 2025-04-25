@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #8b4828;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  color: white;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 16px;
+  border: 2px solid white;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  background-color: white;
+  color: #8b4828;
+}
+
+main {
+  padding: 40px;
+  background-color: #f7f2ec;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+section h2,
+.titulo {
+  color: #8b4828;
+  font-size: 26px;
+  border-bottom: 2px solid #8b4828;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.descricao,
+.depoimentos p,
+.contatos {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #8b4828;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  margin-top: 60px;
+}
