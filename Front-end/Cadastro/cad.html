@@ -9,13 +9,13 @@
 <body>
   <div class="container">
     <h1>Cadastro de Cavalo à Venda</h1>
-    <form class="formulario">
+    <form class="formulario" id="formCadastro">
       
       <label for="valor">Valor (R$):</label>
-      <input type="number" id="valor" name="valor" required>
+      <input type="number" id="valor" name="valor" required min="1">
 
       <label for="raca">Raça:</label>
-      <select id="sexo" name="sexo" required>
+      <select id="raca" name="raca" required>
         <option value="">Selecione</option>
         <option value="Cavalo Crioulo">Cavalo Crioulo</option>
         <option value="Mangalarga Marchador">Mangalarga Marchador</option>
@@ -24,19 +24,19 @@
         <option value="Piquira">Piquira</option>
         <option value="Quarto de Milha">Quarto de Milha</option>
         <option value="Puro Sangue Inglês">Puro Sangue Inglês</option>
-        <option value="Appaloosa ">Appalosa</option>
+        <option value="Appaloosa">Appaloosa</option>
         <option value="Árabe">Árabe</option>
-        <option value="Frísio ">Frísio </option>
+        <option value="Frísio">Frísio</option>
       </select>
 
       <label for="idade">Data de Nascimento / Ano:</label>
       <input type="text" id="idade" name="idade" placeholder="Ex: 15/08/2020 ou 2020" required>
 
       <label for="tamanho">Tamanho (em metros):</label>
-      <input type="number" step="0.01" id="tamanho" name="tamanho" required>
+      <input type="number" step="0.01" id="tamanho" name="tamanho" required min="0.5">
 
       <label for="peso">Peso (kg):</label>
-      <input type="number" id="peso" name="peso" required>
+      <input type="number" id="peso" name="peso" required min="1">
 
       <label for="pelagem">Pelagem (cor):</label>
       <input type="text" id="pelagem" name="pelagem" required>
@@ -44,12 +44,12 @@
       <label for="sexo">Sexo:</label>
       <select id="sexo" name="sexo" required>
         <option value="">Selecione</option>
-        <option value="Macho">Macho</option>
-        <option value="Fêmea">Fêmea</option>
+        <option value="Masculino">Masculino</option>
+        <option value="Feminino">Fêmea</option>
       </select>
 
-      <label for="registro">N de Registro</label>
-      <input type="number" name="cavregis" id="cavregis">
+      <label for="registro">Número de Registro:</label>
+      <input type="number" name="cavregis" id="cavregis" required>
 
       <label for="localizacao">Localização:</label>
       <input type="text" id="localizacao" name="localizacao" required>
@@ -60,5 +60,8 @@
       <button type="submit">Cadastrar Cavalo</button>
     </form>
   </div>
+
+  <script src="cad.js">
+  </script>
 </body>
 </html>

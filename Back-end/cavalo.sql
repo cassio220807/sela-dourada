@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS cavalo (
     tamanho DECIMAL(3, 2),                       -- Tamanho em metros
     peso DECIMAL(5, 2),                         -- Peso em kg
     pelagem_cor VARCHAR(50),                    -- Cor da pelagem
-    sexo ENUM('Masculino', 'Feminino') NOT NULL, -- Sexo (Masculino, Feminino, Outro)
+    sexo ENUM('Macho', 'Fêmea') NOT NULL, -- Sexo (Masculino, Feminino, Outro)
     numero_registro VARCHAR(50) UNIQUE,         -- Número de Registro
     localizacao VARCHAR(255),                   -- Localização (cidade, estado, etc)
     data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,  -- Data de criação do registro

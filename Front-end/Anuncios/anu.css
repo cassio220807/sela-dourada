@@ -5,6 +5,7 @@ body {
   background-color: #ffffff;
   color: #333;
   box-sizing: border-box;
+  margin-bottom: 100px;
 }
 
 header {
@@ -110,6 +111,9 @@ main {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: #8b4828;
   color: white;
   text-align: center;
